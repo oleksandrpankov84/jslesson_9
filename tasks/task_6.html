@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ДЗ 9</title>
+</head>
+<body>
+	<header>
+		<a href="../index.html">На головну</a>
+		<h1>Задача 6</h1>
+	</header>
+	<main>
+		<p>Дано масив елементів. Усі елементи, які більші за перший елемент помножити на 2.</p>
+		<h2>Розвʼязок:</h2>
+		<script>
+			const arr=[20,13,33,44,23,43,55,10]
+			const firstElement=arr[0]
+			arr.forEach((element,index,arrRef) => {
+				if (element>firstElement) {
+					arrRef[index]*=2
+				}
+			});
+			document.write(`<p>Перетворений масив:${arr}</p>`)
+		</script>
+	</main>
+</body>
+</html>

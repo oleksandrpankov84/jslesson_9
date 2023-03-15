@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ДЗ 9</title>
+</head>
+<body>
+	<header>
+		<a href="../index.html">На головну</a>
+		<h1>Задача 1</h1>
+	</header>
+	<main>
+		<p>Користувач вводить кількість елементів. Створити масив, що складається з вказаної кількості елементів заповнених нулями.</p>
+		<h2>Розвʼязок:</h2>
+		<script>
+			function getArray(arrayElements) {
+				return new Array(arrayElements).fill(0)
+			}
+			const userArrayElements=parseInt(prompt('Введить кількість елементів массиву','5'))
+			const userArray=getArray(userArrayElements)
+			document.write(userArray)
+		</script>
+	</main>
+</body>
+</html>

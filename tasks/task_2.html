@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ДЗ 9</title>
+</head>
+<body>
+	<header>
+		<a href="../index.html">На головну</a>
+		<h1>Задача 2</h1>
+	</header>
+	<main>
+		<p>Користувач вводить кількість елементів. Створити масив, у якому перша половина заповнена 1-цями, а друга заповнена 7-ками.</p>
+		<h2>Розвʼязок:</h2>
+		<script>
+			const userLengthArray=parseInt(prompt('Введить кількіть елементів','5'))
+			const halfOfLength=Math.round(userLengthArray/2)
+			const array=new Array(userLengthArray).fill(1,0,halfOfLength).fill(7,halfOfLength)
+			document.write(array)
+		</script>
+	</main>
+</body>
+</html>

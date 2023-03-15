@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ДЗ 9</title>
+</head>
+<body>
+	<header>
+		<a href="../index.html">На головну</a>
+		<h1>Задача 8</h1>
+	</header>
+	<main>
+		<p>Дано масив номерів авто. Сформувати новий масив тих, які починаються на «А»</p>
+		<h2>Розвʼязок:</h2>
+		<script>
+			const autoNumberList=['АА5647КВ','АМ5570СЕ','КА4532СВ','АВ8765ЕК','ВМ9987СК']
+			const newNumList=autoNumberList.filter(element=>element[0]==='А')
+			document.write(newNumList)
+		</script>
+	</main>
+</body>
+</html>
